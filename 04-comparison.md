@@ -20,22 +20,24 @@ comparison_type: architectural; not compliance determination
 
 ## Consolidated matrix
 
+**Decision relationship convention.** FAA–SADE relationships are bidirectional and maintained consistently across the two registers. A relationship is recorded when a decision directly addresses, extends, or materially affects the architectural question represented by a decision in the other register. Relationships may be complementary or operate at different architectural levels; they do not imply equivalence, regulatory compliance, or implementation. Merely sharing a broad topic, such as certification or safety, is insufficient to establish a relationship. A dash (—) indicates that no sufficiently direct counterpart has been identified.
+
 | FAA ID | FAA design choice | Related SADE decisions | Relationship | Explanation |
 |---|---|---|---|---|
 | D1 | Federated noncentralized UTM | S1 | Enhanced / layered | SADE introduces delegated zone-level management under broader UTM, not a replacement for federation. |
 | D2 | Operator-managed UAS–UAS risk | S2, S3 | Enhanced | Mandatory spatial air-leasing adds coordination infrastructure; this does not automatically transfer all collision-avoidance responsibility away from operators. |
-| D3 | Private authorized service providers | S8, S10, S11 | Partial | SADE uses specialist assurance services but does not prescribe Part 146 provider status. |
+| D3 | Private authorized service providers | — | Silent | SADE specifies specialized services such as SafeCert and Proving Ground, but does not establish whether these services operate as FAA-authorized Part 146 providers. Its architecture does not independently decide the regulatory service-provider model. |
 | D4 | Allow provider self-provisioning | — | Silent | No corresponding SADE policy on self-provisioning regulated UTM services. |
 | D5 | Risk-scoped strategic deconfliction | S2, S3 | Different | Leasing is mandatory inside a SADE zone, including flexible just-in-time allocation, rather than the same NPRM geographic mandate. |
 | D6 | Avoid universal strategic deconfliction | S7, S8, S12 | Complementary | FAA scopes coordination obligations; SADE adapts admission evidence and conditions to individual risk while leasing remains universal within the zone. |
 | D7 | Shared coordination over arbitrary methods | S2, S3 | Aligned + enhanced | SADE mandates a shared leasing mechanism but permits multiple strategies within it. |
 | D8 | Discoverable 4-D operational intents | S2, S3, S4 | Different | SADE allocates spatial leases dynamically; times are generally estimates, not fixed 4-D commitments. |
-| D9 | Conformance to operational intent | S4, S5 | Different | SADE detects unauthorized occupancy of spatial leases, including backward re-entry into released segments; delays alone need not violate. |
+| D9 | Conformance to operational intent | S4, S5, S12 | Different | SADE detects unauthorized occupancy of spatial leases, including backward re-entry into released segments; delays alone need not violate. SADE also uses operational monitoring as evidence for reputation and future admission decisions. |
 | D10 | Nonconformance alerts and information sharing | S6 | Enhanced | SADE additionally instructs corrective action; intended behavior is under implementation. |
 | D11 | Routine qualifying operations without individual FAA authorization | S1, S7, S9 | Enhanced / layered | SADE adds per-request local zone admission under proposed delegated authority, distinct from individual FAA NAS authorization. |
-| D12 | Industry interoperability under FAA oversight | S1, S8 | Partial | Interconnected SADE services are specified; equivalent provider governance/FAA oversight is not. |
+| D12 | Industry interoperability under FAA oversight | S1 | Partial | Delegated zone management introduces a proposed UTM–SADE boundary and delegation relationship; this is not an established FAA oversight mechanism, and equivalent provider governance is not specified. |
 | D13 | Nondiscriminatory services and FAA NAS authority | — | Silent | SADE does not explicitly define neutrality, fairness, appeals, or NAS legal authority allocation; delegation is assumed external. |
-| D14 | Performance requirements, not fixed service catalog | S7, S10, S11 | Partial | SADE evaluates capability evidence but does not directly decide the regulatory service-catalog question. |
+| D14 | Performance requirements, not fixed service catalog | — | Silent | SADE specifies mechanisms for capability assessment, evidence acquisition, and certification, but does not make a corresponding decision about whether UTM regulations should prescribe a fixed catalog of services. |
 | D15 | Certify and oversee UTM services | S8, S9, S10, S11, S12 | Complementary | SafeCert and Proving Ground assure operation-specific capability; not a substitute for Part 146 provider oversight. |
 
 ## What the matrix does **not** establish

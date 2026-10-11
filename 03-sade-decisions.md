@@ -8,11 +8,13 @@ source: NASA ULI Year 3 Q4 report and project-lead design clarifications
 
 **Snapshot: October 11, 2026.** SADE is a research design for delegated management of UTM-authorized zones. This register represents **design intentions**, including mechanisms not yet fully implemented. It does not imply FAA authorization of the delegation model.
 
+**Decision relationship convention.** FAA–SADE relationships are bidirectional and maintained consistently across the two registers. A relationship is recorded when a decision directly addresses, extends, or materially affects the architectural question represented by a decision in the other register. Relationships may be complementary or operate at different architectural levels; they do not imply equivalence, regulatory compliance, or implementation. Merely sharing a broad topic, such as certification or safety, is insufficient to establish a relationship. A dash (—) indicates that no sufficiently direct counterpart has been identified.
+
 | ID | Design area | SADE decision | Maturity / qualification | Related FAA IDs |
 |---|---|---|---|---|
-| S1 | Delegated zone management | A bounded zone is authorized within the broader UTM ecosystem and managed by a SADE zone authority; entry/exit requires UTM–SADE boundary coordination. | Architectural proposal; FAA delegation pathway not established | D1, D11 |
+| S1 | Delegated zone management | A bounded zone is authorized within the broader UTM ecosystem and managed by a SADE zone authority; entry/exit requires UTM–SADE boundary coordination. | Architectural proposal; FAA delegation pathway not established | D1, D11, D12 |
 | S2 | Mandatory air-leasing | Aircraft inside a zone obtain air-leases rather than relying only on predeclared trajectories. | Research design | D2, D5, D7, D8 |
-| S3 | Flexible lease allocation | Support full A-to-B route/tunnel leasing and just-in-time incremental segment leasing; timing is usually an estimate, not a rigid obligation. | Research design | D5, D8 |
+| S3 | Flexible lease allocation | Support full A-to-B route/tunnel leasing and just-in-time incremental segment leasing; timing is usually an estimate, not a rigid obligation. | Research design | D2, D5, D7, D8 |
 | S4 | Progressive release and reuse | Track aircraft position and release traversed or unused lease portions for allocation to other aircraft, enabling dense interleaving. | Research design | D8, D9 |
 | S5 | Lease-based conformance | Treat movement back into released lease segments and flight outside currently leased space as violations; ordinary schedule slippage need not be a violation. | Research design | D9 |
 | S6 | Violation notification and correction | Alert the responsible operator and nearby aircraft and instruct the violating aircraft to take corrective action. | Intended design; implementation underway | D10 |
